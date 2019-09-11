@@ -1,0 +1,18 @@
+<form action="/signup" method="post">
+
+  <label for="username">Username: </label>
+  <input type="text" name="username" id="username">
+
+  <label for="password">Password: </label>
+  <input type="password" name="password" id="password">
+  <meter max="5" id="password-strength-meter"></meter>
+  <p id="password-strength-text"></p>
+
+
+  <button type="submit">Sign up</button>
+
+</form>
+
+{{#if message}}
+<p style="color: red; background-color: black;">{{message}}</p>
+{{/if}}
